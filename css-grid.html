@@ -33,9 +33,11 @@
             display: grid;
             display: -ms-grid;
             grid-template-columns: auto 1fr;
-            -ms-grid-columns: auto 1fr;
+            -ms-grid-columns: auto 5px 1fr;
             grid-template-rows: auto 1fr;
-            -ms-grid-rows: auto 1fr;
+            -ms-grid-rows: auto 10px 1fr;
+            row-gap: 10px;
+            column-gap: 5px;
             padding: 10px;
         }
 
@@ -45,16 +47,16 @@
         }
 
         .grid-item-2 {
-            -ms-grid-column: 2;
+            -ms-grid-column: 3;
             -ms-grid-row: 1;
         }
         .grid-item-3 {
             -ms-grid-column: 1;
-            -ms-grid-row: 2;
+            -ms-grid-row: 3;
         }
         .grid-item-4 {
-            -ms-grid-column: 2;
-            -ms-grid-row: 2;
+            -ms-grid-column: 3;
+            -ms-grid-row: 3;
         }
     </style>
 </head>
