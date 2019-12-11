@@ -28,7 +28,7 @@
             line-height: 30px;
         }
 
-        .flex {
+        .flex-fill {
             flex: 1;
         }
 
@@ -40,11 +40,11 @@
             width: 100%;
         }
 
-        .text-align-right {
+        .text-right {
             text-align: right;
         }
 
-        .pr {
+        .pr-1 {
             padding-right: 10px;
         }
 
@@ -57,14 +57,14 @@
 <body class="border-box">
     <div class="container d-flex h-100">
         <div>
-            <div class="text-align-right pr">Name:</div>
-            <div class="text-align-right pr">Description:</div>
+            <div class="text-right pr-1">Name:</div>
+            <div class="text-right pr-1">Description:</div>
         </div>
-        <div class="flex d-flex flex-column">
+        <div class="flex-fill d-flex flex-column">
             <div>
                 <input type="text" class="w-100">
             </div>
-            <div class="flex">
+            <div class="flex-fill">
                 <textarea type="text" class="w-100 h-100"></textarea>
             </div>
         </div>
