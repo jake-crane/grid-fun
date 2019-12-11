@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .h-100 {
+            height: 100%;
+        }
+
+        .my-grid {
+            display: grid;
+            display: -ms-grid;
+            grid-template-columns: auto 1fr;
+            -ms-grid-columns: auto 1fr;
+            grid-template-rows: auto 1fr;
+            -ms-grid-rows: auto 1fr;
+            padding: 10px;
+        }
+
+        .grid-item-1 {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1;
+        }
+
+        .grid-item-2 {
+            -ms-grid-column: 2;
+            -ms-grid-row: 1;
+        }
+        .grid-item-3 {
+            -ms-grid-column: 1;
+            -ms-grid-row: 2;
+        }
+        .grid-item-4 {
+            -ms-grid-column: 2;
+            -ms-grid-row: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-grid h-100">
+        <div class="grid-item-1 text-right">Name:</div>
+        <input type="text" class="grid-item-2"/>
+        <div class="text-right grid-item-3">Description:</div>
+        <textarea type="text" class="grid-item-4 w-100 h-100"></textarea>
+    </div>
+</body>
+
+</html>
